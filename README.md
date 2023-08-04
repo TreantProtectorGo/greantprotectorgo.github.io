@@ -1,6 +1,6 @@
-## `Vite + Vue 3.x + Tailwind 2.x` starter ⚡
+## `QR Code Scanner` starter ⚡
 
-This starter template also includes:
+This project includes:
 
 - [Inter var font](https://github.com/rsms/inter) (self hosted, woff2, version 3.15)
 - [Vue Router 4.x](https://github.com/vuejs/vue-router-next)
@@ -17,13 +17,5 @@ npm install
 npm run dev
 npm run build
 ```
-yarn:
-```sh
-yarn
-yarn dev
-yarn build
-```
 
-### Bonus
-
-[CodePen Template](https://codepen.io/web2033/pen/QWNbwxY) with a similar stack (Vue 3.x + Tailwind 2.x + Inter var font)
+### 

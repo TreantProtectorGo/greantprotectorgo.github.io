@@ -26,7 +26,7 @@ const onDetect = detectedCodes => {
 
   const [ firstCode ] = detectedCodes
   result.value = firstCode.rawValue
-  //window.location.href = result.value;
+  window.location.href = result.value;
 }
 
 const paintOutline = (detectedCodes, ctx) => {
