@@ -1,19 +1,14 @@
-## `QR Code Scanner` starter ⚡
+## `QR Code Scanner`⚡
 
 This project includes:
 
-- [Inter var font](https://github.com/rsms/inter) (self hosted, woff2, version 3.15)
-- [Vue Router 4.x](https://github.com/vuejs/vue-router-next)
-- First-party plugins needed for Tailwind UI. Uncomment them in `tailwind.config.js` to enable.
-  * [@tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
-  * [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)
-  * [@tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
+- [vite-vue3-tailwind-starter](https://github.com/aldomendez/vite-vue3-tailwind-starter) 
+- [vue-qrcode-reader](https://github.com/gruhn/vue-qrcode-reader/tree/master#installation-package)
 
 ### Getting Started 🚀
 
 npm:
 ```sh
-npm install
 npm run dev
 npm run build
 ```
