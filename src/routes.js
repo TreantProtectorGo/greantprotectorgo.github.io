@@ -3,7 +3,7 @@ import About from './views/About.vue'
 import NotFound from './views/NotFound.vue'
 
 export let routes = [
-  { path: '/', component: Home, meta: { title: 'Home' } },
+  { path: '/', component: Home, meta: { title: '' } },
   { path: '/about', component: About, meta: { title: 'About' } },
   { path: '/:path(.*)', component: NotFound }
 ]

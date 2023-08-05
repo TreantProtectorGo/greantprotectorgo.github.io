@@ -9,6 +9,7 @@ This project includes:
 
 npm:
 ```sh
+npm install (first time)
 npm run dev
 npm run build
 ```
