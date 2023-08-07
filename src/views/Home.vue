@@ -2,6 +2,10 @@
   <div>
     <p class="error">{{ error }}</p>
 
+    <p class="text">
+      Go to supermarket entrance to get the QR code
+    </p>
+
     <p class="decode-result">
       Result: <b>{{ result }}</b>
     </p>
