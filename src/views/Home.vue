@@ -11,7 +11,15 @@
     </p>
 
     <qrcode-capture @detect="onDetect" ></qrcode-capture>
-    <qrcode-stream @detect="onDetect" :track="paintOutline" @error="onError" />
+
+    <p v-if="torchNotSupported" class="error">Torch not supported for active camera</p>
+    
+    <qrcode-stream @detect="onDetect" :track="paintOutline"  @camera-on="onCameraOn"  @error="onError" >
+    <button :disabled="torchNotSupported">
+      <img :src="'/flashlight.png'" alt="toggle torch" />
+    </button>
+    </qrcode-stream>
+
   </div>
 </template>
 
@@ -23,8 +31,14 @@ import { QrcodeStream, QrcodeCapture } from 'vue-qrcode-reader'
 // data
 const result = ref('')
 const error = ref('')
+const torchNotSupported = ref(false)
 
 // methods
+const onCameraOn = (capabilities) => {
+  console.log(capabilities);
+  torchNotSupported.value = !capabilities.torch;
+}
+
 const onDetect = detectedCodes => {
   console.log(detectedCodes)
 
@@ -70,8 +84,19 @@ const onError = err => {
 </script>
 
 <style scoped>
+button {
+  position: absolute;
+  left: 10px;
+  top: 150px;
+}
+
+button img {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
 .error {
-  font-weight: bold;
   color: red;
+  font-weight: bold;
 }
 </style>
